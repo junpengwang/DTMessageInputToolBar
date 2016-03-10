@@ -163,6 +163,7 @@ static void * kJSQMessagesKeyValueObservingContext = &kJSQMessagesKeyValueObserv
     NSLog(@"%f",dy);
     self.frame = CGRectMake(0, self.frame.origin.y - dy, self.frame.size.width, self.frame.size.height + dy);
 //    self.inputView.frame =  CGRectMake(0, self.inputView.frame.origin.y , self.inputView.frame.size.width, self.inputView.frame.size.height + dy);
+    
 }
 
 
@@ -271,6 +272,10 @@ static void * kJSQMessagesKeyValueObservingContext = &kJSQMessagesKeyValueObserv
                                                  CGRectGetHeight(self.superview.frame)-CGRectGetHeight(rect)- (dy + DT_INPUTVIEW_HEIGHT),
                                                  CGRectGetWidth(self.superview.frame),
                                                  CGRectGetHeight(self.frame));
+                         
+                         if ([self.delegate respondsToSelector:@selector(inputToolBar:didChangeY:)]) {
+                             [self.delegate inputToolBar:self didChangeY:self.frame.origin.y];
+                         }
 
                      } completion:^(BOOL finished) {
                          
