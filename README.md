@@ -49,5 +49,7 @@
 	 */
 	- (void)pluginView:(DTPluginItem *)pluginItem didSelectItemAtIndex:(NSInteger)index;
 	
-	
+##截图
+<img src="1.png" width="400">   <img src="2.png" width="400">
+
 ##未完待续...
