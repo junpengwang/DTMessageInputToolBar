@@ -1,0 +1,12 @@
+/* 
+  File.strings
+  WildIMKitApp
+
+  Created by junpengwang on 16/3/8.
+  Copyright © 2016年 wilddog. All rights reserved.
+*/
+
+"DT::Album" = "照片";
+"DT::Photo" = "拍摄";
+"DT::Location" = "位置";
+"DT::Card" = "名片";
