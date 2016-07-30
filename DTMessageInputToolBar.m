@@ -7,11 +7,6 @@
 //
 
 #import "DTMessageInputToolBar.h"
-#import "DTInputView.h"
-#import "DTEmojiView.h"
-#import "DTPluginBoardView.h"
-#import "DTUtility.h"
-#import "DTTextView.h"
 
 #define DT_TOOLBAR_HEIGHT 532/2.f
 static void * kJSQMessagesKeyValueObservingContext = &kJSQMessagesKeyValueObservingContext;

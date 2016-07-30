@@ -8,11 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@class DTInputView;
-@class DTEmojiView;
-@class DTPluginBoardView;
-@class DTTextView;
-@class DTPluginItem;
+#import "DTInputView.h"
+#import "DTEmojiView.h"
+#import "DTPluginBoardView.h"
+#import "DTUtility.h"
+#import "DTTextView.h"
+
 @class DTMessageInputToolBar;
 
 typedef NS_ENUM(NSUInteger,DTMessageInputToolBarRecordVoiceState){
